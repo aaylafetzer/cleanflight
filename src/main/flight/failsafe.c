@@ -161,7 +161,8 @@ static void failsafeApplyControlInput(void)
 
 bool failsafeIsReceivingRxData(void)
 {
-    return (failsafeState.rxLinkState == FAILSAFE_RXLINK_UP);
+    // return (failsafeState.rxLinkState == FAILSAFE_RXLINK_UP);
+    return true;
 }
 
 void failsafeOnRxSuspend(uint32_t usSuspendPeriod)
