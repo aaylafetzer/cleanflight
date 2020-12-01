@@ -161,6 +161,13 @@ static void failsafeApplyControlInput(void)
 
 bool failsafeIsReceivingRxData(void)
 {
+    /* 
+        Commented out this line and always return true instead 
+        because we have no interest in connecting a radio to this. 
+        This is important for a machine that leap up or fly away,
+        but not for this project that isn't going to put your face
+        on "Will It Blend?"
+    */
     // return (failsafeState.rxLinkState == FAILSAFE_RXLINK_UP);
     return true;
 }
